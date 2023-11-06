@@ -1,0 +1,10 @@
+body {
+    font-family: 'IM Fell English', serif;
+    background: #000 url("./fondo.jpg") no-repeat fixed;
+    background-size: cover;
+
+}
+    .fotoCentral {
+        width: 150px;
+        height: 150px;
+     }

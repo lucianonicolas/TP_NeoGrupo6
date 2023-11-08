@@ -8,3 +8,14 @@ body {
         width: 150px;
         height: 150px;
      }
+
+footer {
+    .desVitto {
+        width: 140px;
+        height: 204px;
+    }
+    .desLucho {
+        width: 200px;
+        height: 200px;
+    }
+}

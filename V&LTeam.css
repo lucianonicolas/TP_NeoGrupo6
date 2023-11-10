@@ -1,3 +1,7 @@
+head {
+    font-size: xx-large;
+}
+
 body {
     font-family: 'IM Fell English', serif;
     background: #000 url("./fondo.jpg") no-repeat fixed;
@@ -9,13 +13,45 @@ body {
         height: 150px;
      }
 
+header{
+    position:inherit;
+    font-size: 30px 
+}
+.fotoCentral {
+        z-index: -1;
+        width: 250px;
+        height: 250px;
+     }
+
+ul{
+    font-family: "IM Fell English", serif;
+    font-size: 20px;
+    list-style-type:none ;
+    display: flex;
+    justify-content: center;
+    padding: 10px; 
+    color:black ;
+}
+li{
+   
+    padding: 5px;
+    margin: 10px;
+    justify-content: center;
+}
+.planilla {
+    justify-content: center;
+    
+}
 footer {
+    display: flex;
     .desVitto {
         width: 140px;
         height: 204px;
+        justify-content: center;
     }
     .desLucho {
         width: 200px;
         height: 200px;
+        justify-content: center;
     }
 }

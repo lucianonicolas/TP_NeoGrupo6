@@ -1,29 +1,22 @@
-head {
-    font-size: xx-large;
+header{
+    align-items: center;
 }
-
-body {
-    font-family: 'IM Fell English', serif;
-    background: #000 url("./fondo.jpg") no-repeat fixed;
-    background-size: cover;
-
+h1{
+    font-size:xx-large;
+    display: flex;
+    justify-content: center;
 }
     .fotoCentral {
         width: 150px;
         height: 150px;
      }
-
-header{
-    position:inherit;
-    font-size: 30px 
+body {
+    font-family: 'IM Fell English', serif;
+    background: #000 url("./fondo.jpg") no-repeat fixed;
+    background-size: cover;
 }
-.fotoCentral {
-        z-index: -1;
-        width: 250px;
-        height: 250px;
-     }
 
-ul{
+.inicio{
     font-family: "IM Fell English", serif;
     font-size: 20px;
     list-style-type:none ;
@@ -37,10 +30,12 @@ li{
     padding: 5px;
     margin: 10px;
     justify-content: center;
+    background-color: azure;
+    border-radius: 25px ;
 }
 .planilla {
     justify-content: center;
-    
+
 }
 footer {
     display: flex;

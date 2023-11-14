@@ -10,24 +10,25 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
-<script src= "./Magia.js"></script>
+    <script src= "./Magia.js"></script>
 </head>
 <body>
-    <header> <!-- logo + nombre-->
+    <div class="Encabezado"><header> <!-- logo + nombre-->
     
         <h1>Quidditch V&L United</h1>
         <img class="fotoCentral" src="./harry-potter-quidditch-team-black-sticker.png">
         
-    </header>
+    </header></div>
 
     <nav> <!-- barra de navegacion horizontal-->
         <ul class="inicio">
             <li><i class="las la-magic"></i><a href="index.html">Inicio</a></li>
-            <li><i class="las la-quidditch"></i><a href="">Nuestro Equipo</a></li> 
-            <li><i class="las la-hat-wizard"></i><a href="">Historia del Quidditch</a></li>
-            <li><i class="las la-book-reader"></i><a href="">Reglamento</a></li>
-            <li><i class="las la-feather"></i><a href="">Formulario de inscripciones</a></li>
-            <li><i class="las la-scroll"></i><a href="">Contacto</a></li>
+            
+            <li><i class="las la-hat-wizard"></i><a href="#historia">Historia del Quidditch</a></li>
+            <li><i class="las la-book-reader"></i><a href="#reglamento">Reglamento</a></li>
+            <li><i class="las la-feather"></i><a href="#formulario">Formulario de inscripciones</a></li>
+            <li><i class="las la-scroll"></i><a href="#contacto">Contacto</a></li>
+            <li><i class="las la-quidditch"></i><a href="#ideas">Equipamiento e ideas</a></li> 
         </ul>
     </nav>
     <button onclick="openModal()">Suscribirse a Noticias</button>
@@ -49,7 +50,7 @@
     <main>
         <!-- foto + api clima + secciones -->
 
-        <section> <!-- historia -->
+        <section id="historia"> <!-- historia -->
             <h2>Historia del Quidditch</h2>
         
 <p>Todavía no se ha inventado ningún encantamiento que permita volar a los magos en su forma humana sin medios adicionales. Hoy estamos tan acostumbrados al hecho de que haya al menos una escoba voladora en todos los hogares de magos que rara vez nos detenemos a preguntarnos el motivo ¿Por qué la humilde escoba de ha convertido en el único objeto legalmente permitido como medio de transporte para los magos? ¿Por qué no elegimos hacer toneles voladores, sillones voladeres, bañeras voladoras? ¿Por qué escobas?</p>
@@ -69,17 +70,18 @@
 <h3>La aparición de la Snitch Dorada.</h3>
 <p>Desde comienzos del siglo XII, la caza del snidget fue muy popular entre los numerosos magos y brujas. El snidget dorado es en la actualidad una especie protegida, pero en esa época abundaban en el norte de Europa, aunque eran muy difíciles de detectar por lo muggles debido a su capacidad para ocultarse y su gran velocidad.</p>
 <p>El diminuto tamaño de los snidgets, sumado a su notable agilidad en el aire y su talento para evitar a los predadores, no hacia sino aumentar el prestigio de los magos que los cazaban. La caza del snidget era reprobable en muchos aspectos. Todo mago sensato debe lamentar la destrucción de estos pequeños y pacíficos pájaros en nombre del deporte. Además, la caza del snidget se hacia a plena luz del día y provoco más avistamientos de escobas en pleno vuelo por parte de los muggles que ninguna otra actividad de los magos.</p>
+<img src="./snidget.jpg" class="snidget" >
 <p>Sin embargo, el consejo de magos de esa época fue incapaz de controlar la popularidad de este deporte.</p> 
 <p>La casa del snidget se cruzó con el Quidditch en 1269 en un partido al que asistía el mismísimo presidente del consejo de magos barberus bragge, quien llego un snidget enjaulado al partido y reunió a los juadores para decirles que entregaría un premio de 150 galeones a quien lo atrapara en el transcurso del juego. En una carta que se exhibe en el museo de Quidditch se lee “los jugadores se elevaron todos juntos ignorando la quaffle y esquivando las blooders. Ambos guardianes abandonaron los cestos que debían proteger y se unieron a la cacería. Pobrecito snidget subía y bajaba buscando una forma de escapar del campo, pero el público lo obligaba a regresar con encantamientos repelentes”. La idea del jefe bragge había cambiado para siempre la naturaleza del Quidditch. Muy pronto, se empezó a soltar snidget dorados en todos los partidos donde un solo jugador por equipo (el buscador) tenia la tarea de atraparlo. Cuando uno mataba al pájaro el partido concluía y el equipo del buscador era premiado con 150 puntos extras en memoria de los 150 galeones prometidos por el presidente Bragge.</p>
 <p>A mediados del siglo siguiente la población de snidget dorados había disminuido tanto que el consejo de magos, ahora dirigido por una persona considerablemente mas inteligente, elfrida clagg, declaro el snitget dorado como especie protegida y prohibió que los usaran partidos de Quidditch.</p>
 <p>La invención de la Snitch dorada se atribuye al mago Bowman Wright del valle de godric, que era un encantador de metales muy habilidoso, se dedico a la tarea de crear una pelota que imitara el comportamiento y las formas de vuelos del snidget. La Snitch dorada como llamo Bowman a su invento era una pelota del tamaño de una nuez y pesaba lo mismo que un snitget. Sus alas plateadas tenían articulaciones giratorias como la de los snidget lo que les permitía cambiar la dirección tan rápido como el rayo y con la misma precisión que su animal viviente y además había sido hechizada para que permaneciera dentro del campo de juego. Se puede decir que así se terminó con el proceso que había comenzado 300 años antes, en el pantano de Queerditch. Por fin había nacido el juego del Quidditch tal como lo conocemos en la actualidad</p>
-
+<img src="./snitch.gif" class="snitch">
  </section>
  <h2>Si te interesa saber mas sobre la historia del quidditch en este enlace podes descargarte el libro <i>Quidditch a Traves de los Tiempos escrito por Kennilworthy Whisp</i></h2>
   
   <a href="./Quidditch_a_Traves_de_los_Tiempos.pdf" download>Descargar PDF</a>
 
-<section> <!-- reglamento -->
+<section id="reglamento"> <!-- reglamento -->
   <h2>Reglamento del Quidditch</h2>
     <h3>Campo de juego y equipamiento</h3>
      <h4>Campo de juego.</h4>
@@ -148,15 +150,15 @@
             <p>Descripción: no se permite más de un solo Cazador dentro del área de anotación.</p>
         </section>
 
-        <section> <!-- Nuestro Equipo -->
-            <h2>¡Conoce a nuestro equipo!</h2>
+        <section id="ideas"> <!-- Nuestro Equipo -->
+            <h2>Equipamiento e ideas</h2>
             <div class="carousel">
                 <div class="carousel-content">
                   <div class="carousel-item">
-                    <img class="carousel-img" src="./equipo1.jpg" alt="Primera Imagen">
+                    <img class="carousel-img" src="./palos.jpg" alt="Primera Imagen">
                   </div>
                   <div class="carousel-item">
-                    <img class="carousel-img" src="./equipo2.jpeg" alt="Segunda Imagen">
+                    <img class="carousel-img" src="./equipamiento.jpg" alt="Segunda Imagen">
                   </div>
                   <div class="carousel-item">
                     <img class="carousel-img" src="./claves.jpg" alt="Tercera Imagen">
@@ -170,7 +172,7 @@
 
     </main>
 
-    <div class="planilla">
+    <div class="planilla" id="formulario">
         <h2>CONTACTANOS</h2>
         
         <form action="" method=""> <!-- formulario de contacto -->
@@ -212,6 +214,5 @@
     </div>
     
     </footer>
-    
 </body>
 </html>

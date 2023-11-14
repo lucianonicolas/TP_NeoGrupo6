@@ -10,13 +10,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+<script src= "./Magia.js"></script>
 </head>
 <body>
     <header> <!-- logo + nombre-->
     
         <h1>Quidditch V&L United</h1>
         <img class="fotoCentral" src="./harry-potter-quidditch-team-black-sticker.png">
-
+        
     </header>
 
     <nav> <!-- barra de navegacion horizontal-->
@@ -29,120 +30,140 @@
             <li><i class="las la-scroll"></i><a href="">Contacto</a></li>
         </ul>
     </nav>
+    <button onclick="openModal()">Suscribirse a Noticias</button>
+
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span onclick="closeModal()" style="float: right; cursor: pointer;">&times;</span>
+    
+    <div class="step" id="step-1">
+      <h2>Agrega tu nombre y tu correo para recibir noticias</h2>
+      <input type="text" id="name" placeholder="Nombre">
+      <input type="email" id="email" placeholder="Correo electrónico">
+      <button onclick="submitForm()">Suscribirse</button>
+    </div>
+  </div>
+  
+</div>
 
     <main>
         <!-- foto + api clima + secciones -->
 
         <section> <!-- historia -->
             <h2>Historia del Quidditch</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus cumque enim a, expedita nihil reprehenderit nostrum repudiandae consequatur explicabo sit tempore ad sed cum facere quis distinctio nulla modi omnis?</p>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus cumque enim a, expedita nihil reprehenderit nostrum repudiandae consequatur explicabo sit tempore ad sed cum facere quis distinctio nulla modi omnis?</p>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus cumque enim a, expedita nihil reprehenderit nostrum repudiandae consequatur explicabo sit tempore ad sed cum facere quis distinctio nulla modi omnis?</p>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus cumque enim a, expedita nihil reprehenderit nostrum repudiandae consequatur explicabo sit tempore ad sed cum facere quis distinctio nulla modi omnis?</p>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus cumque enim a, expedita nihil reprehenderit nostrum repudiandae consequatur explicabo sit tempore ad sed cum facere quis distinctio nulla modi omnis?</p>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus cumque enim a, expedita nihil reprehenderit nostrum repudiandae consequatur explicabo sit tempore ad sed cum facere quis distinctio nulla modi omnis?</p>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus cumque enim a, expedita nihil reprehenderit nostrum repudiandae consequatur explicabo sit tempore ad sed cum facere quis distinctio nulla modi omnis?</p>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus cumque enim a, expedita nihil reprehenderit nostrum repudiandae consequatur explicabo sit tempore ad sed cum facere quis distinctio nulla modi omnis?</p>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus cumque enim a, expedita nihil reprehenderit nostrum repudiandae consequatur explicabo sit tempore ad sed cum facere quis distinctio nulla modi omnis?</p>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus cumque enim a, expedita nihil reprehenderit nostrum repudiandae consequatur explicabo sit tempore ad sed cum facere quis distinctio nulla modi omnis?</p>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus cumque enim a, expedita nihil reprehenderit nostrum repudiandae consequatur explicabo sit tempore ad sed cum facere quis distinctio nulla modi omnis?</p>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus cumque enim a, expedita nihil reprehenderit nostrum repudiandae consequatur explicabo sit tempore ad sed cum facere quis distinctio nulla modi omnis?</p>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus cumque enim a, expedita nihil reprehenderit nostrum repudiandae consequatur explicabo sit tempore ad sed cum facere quis distinctio nulla modi omnis?</p>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus cumque enim a, expedita nihil reprehenderit nostrum repudiandae consequatur explicabo sit tempore ad sed cum facere quis distinctio nulla modi omnis?</p>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus cumque enim a, expedita nihil reprehenderit nostrum repudiandae consequatur explicabo sit tempore ad sed cum facere quis distinctio nulla modi omnis?</p>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus cumque enim a, expedita nihil reprehenderit nostrum repudiandae consequatur explicabo sit tempore ad sed cum facere quis distinctio nulla modi omnis?</p>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus cumque enim a, expedita nihil reprehenderit nostrum repudiandae consequatur explicabo sit tempore ad sed cum facere quis distinctio nulla modi omnis?</p>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus cumque enim a, expedita nihil reprehenderit nostrum repudiandae consequatur explicabo sit tempore ad sed cum facere quis distinctio nulla modi omnis?</p>
-        </section>
+        
+<p>Todavía no se ha inventado ningún encantamiento que permita volar a los magos en su forma humana sin medios adicionales. Hoy estamos tan acostumbrados al hecho de que haya al menos una escoba voladora en todos los hogares de magos que rara vez nos detenemos a preguntarnos el motivo ¿Por qué la humilde escoba de ha convertido en el único objeto legalmente permitido como medio de transporte para los magos? ¿Por qué no elegimos hacer toneles voladores, sillones voladeres, bañeras voladoras? ¿Por qué escobas?</p>
+<p>Las brujas y magos eran los bastante perspicaces para darse cuenta de que sus vecinos muggles tratarían de utilizar sus poderes si llegaban a conocerlos por lo que se ocultaron mucho antes de que se aprobara el Estatuto Internacional del Secreto de los Brujos. Si iban en sus casas un medio para volar debía ser discreto, algo fácil de esconder. La escoba era ideal para ese propósito; no había que buscar explicaciones ni excusas si las encontraban eran fáciles de llevar y baratas. Sin embargo, las primeras escobas tenían sus inconvenientes.</p>
+<p>En 1107, Guthreie Lochrin, un mago escoces escribía que tenia “las posaderas llenas de astillas y hemorroides hinchadas” después de un corto viaje en escoba de Montrose hasta Arbroath.</p>
+<p>Una escoba voladora de la edad media que se exhibe en el museo de quidditch de Londres nos permite hacernos una idea de la incomodidad a la que se refería lochrin: una escoba construida a partir de una gruesa rama nudosa de fresno sin barnizar, con varillas de avellanó atadas toscamente a un extremo, no es cómoda ni aerodinámica. En consonancia los encantamientos que posee también son muy básicos: solamente puede ir hacia adelante, siempre a la misma velocidad, el resto de las funciones que incluye son subir, bajar y detenerse.</p>
+<h3>Antiguos juegos de escobas voladoras.</h3>
+<p>Los deportes con escobas surgieron una vez que los palos hubieran mejorado lo bastante para permitir que los conductores variaran la altitud, velocidad y dirección en el aire.</p>
+<p>La famosa carrera anual de escobas de Suecia se remonta al siglo X. Los competidores volaban una distancia de 500 kilómetros, la ruta atravesaba una reserva de dragones y el trofeo de plata tenía la forma de un hocicorto sueco. En el presente la carrera es un acontecimiento internacional.</p>
+<p>En 1105 se jugaba en Alemania al <i>Stichstock</i>, que consistía en un poste de 6 metros coronado por una vejiga de dragón inflada. Un jugador montado en una escoba tenía la misión de protegerla. El guardián o guardiana de la vejiga estaba atado por la cintura al poste por una soga de manera que no podía alejarse más de tres metros. Los jugadores restantes debían volar por turno hasta la vejiga para intentar pincharla. El guardián tenía permiso para utilizar su varita mágica con el objeto de rechazar eso ataques. El juego terminaba cuando uno de los jugadores perforaba la vejiga cuando el guardián conseguía anular a todos los adversarios o estos caían agotados. En el siglo XIV el juego stichstock declino hasta desaparecer.</p>
+<p>En Irlanda floreció el juego del <i>Aingingein</i>, tema de muchas baladas irlandesas (cuenta la leyenda que el mítico mago Fingal el Temerario era todo un campeón). Uno por uno de los jugadores debía atrapar la dom o pelota (en realidad una vesícula biliar de cabra) y pasar a toda velocidad a través de una serie de toneles ardientes colocadas a gran altura sobre postes. La dom debía ser arrojada dentro del ultimo tonel. El jugador que tardara menos en cruzar con la dom a través del ultimo tonel sin quemarse era el ganador.</p>
+<p>Escocia fue la cuna del que probablemente sea el mas peligroso de todos los juegos de escoba: el <i>creaothceann</i>. Los jugadores llevaban un caldero atado a la cabeza. al sonido del cuerno o el tambor, hasta un centenar de cantos rodados y rocas que habían sido suspendidos en el aire a unos 30 metros del suelo mediante un hechizo se precipitaban a la tierra. Los jugadores pasaban a toda velocidad y procuraban atrapar todas las rocas que podían en sus calderos. Dado que muchos magos escoceses sostenían que el <i>creaothceann</i> era la prueba suprema de virilidad y coraje, el juego gozo de mucha popularidad durante la edad media pese a la enorme cantidad de muertes que causaba. Este juego este juego se declaró ilegal en 1762 y aunque Magnus cráneo bollado McDonald hoy encabezó una campaña para reintroducirlo en 1960 el Ministerio de la magia jamás he levantado la prohibición.</p>
+<p>El <i>shuntbumps</i> fue popular en Devon, Inglaterra. Consistían en una especie de justa rudimentaria donde el objetivo era derribar de sus escobas a la mayor cantidad posible de adversario, de modo que la única persona que quedara montada en su escoba ganaba.</p>
 
-        <section> <!-- reglamento -->
-            <h2>Reglamento del Quidditch</h2>
-            <h3>Campo de juego y equipamiento</h3>
+<h3>El juego del pantano Queerditch.</h3>
+<p>Si conocemos los rudimentarios comienzos del quidditch es gracias a los textos de la bruja Gertie Keddle, que vivió a orillas del pantano de Queerditch en el siglo XI. Afortunadamente para nosotros, ella escribía un diario que ahora esta en el museo de Quidditch de Londres. En uno de los fragmentos dice <i>Juegan a no sé qué estupidez en sus escobas voladoras. Una gran pelota de cuero aterrizo en mis coles. Eche un maleficio sobre el hombre que vino a buscarla</i> La pelota rudimentaria con la que jugaban era la quaffle moderna; naturalmente, la vejiga inflada que se utilizaba para otros juegos de escoba de aquella época sería difícil de arrojar con precisión, sobre todo si había viento. También Gertie menciona <i>Tenían una pelota nueva. Se la tiraban unos a otros e intentaban colarla entre las copas de los arboles que hay en cada extremo del pantano</i>; una aparente forma primitiva de marcar. Y atisbamos a las precursoras de las bludgers cuando dice <i> Ahora había dos rocas pesadas que volaban alrededor de ellos y trataban de tirarlos de sus escobas”.</i></p>
+<h3>La aparición de la Snitch Dorada.</h3>
+<p>Desde comienzos del siglo XII, la caza del snidget fue muy popular entre los numerosos magos y brujas. El snidget dorado es en la actualidad una especie protegida, pero en esa época abundaban en el norte de Europa, aunque eran muy difíciles de detectar por lo muggles debido a su capacidad para ocultarse y su gran velocidad.</p>
+<p>El diminuto tamaño de los snidgets, sumado a su notable agilidad en el aire y su talento para evitar a los predadores, no hacia sino aumentar el prestigio de los magos que los cazaban. La caza del snidget era reprobable en muchos aspectos. Todo mago sensato debe lamentar la destrucción de estos pequeños y pacíficos pájaros en nombre del deporte. Además, la caza del snidget se hacia a plena luz del día y provoco más avistamientos de escobas en pleno vuelo por parte de los muggles que ninguna otra actividad de los magos.</p>
+<p>Sin embargo, el consejo de magos de esa época fue incapaz de controlar la popularidad de este deporte.</p> 
+<p>La casa del snidget se cruzó con el Quidditch en 1269 en un partido al que asistía el mismísimo presidente del consejo de magos barberus bragge, quien llego un snidget enjaulado al partido y reunió a los juadores para decirles que entregaría un premio de 150 galeones a quien lo atrapara en el transcurso del juego. En una carta que se exhibe en el museo de Quidditch se lee “los jugadores se elevaron todos juntos ignorando la quaffle y esquivando las blooders. Ambos guardianes abandonaron los cestos que debían proteger y se unieron a la cacería. Pobrecito snidget subía y bajaba buscando una forma de escapar del campo, pero el público lo obligaba a regresar con encantamientos repelentes”. La idea del jefe bragge había cambiado para siempre la naturaleza del Quidditch. Muy pronto, se empezó a soltar snidget dorados en todos los partidos donde un solo jugador por equipo (el buscador) tenia la tarea de atraparlo. Cuando uno mataba al pájaro el partido concluía y el equipo del buscador era premiado con 150 puntos extras en memoria de los 150 galeones prometidos por el presidente Bragge.</p>
+<p>A mediados del siglo siguiente la población de snidget dorados había disminuido tanto que el consejo de magos, ahora dirigido por una persona considerablemente mas inteligente, elfrida clagg, declaro el snitget dorado como especie protegida y prohibió que los usaran partidos de Quidditch.</p>
+<p>La invención de la Snitch dorada se atribuye al mago Bowman Wright del valle de godric, que era un encantador de metales muy habilidoso, se dedico a la tarea de crear una pelota que imitara el comportamiento y las formas de vuelos del snidget. La Snitch dorada como llamo Bowman a su invento era una pelota del tamaño de una nuez y pesaba lo mismo que un snitget. Sus alas plateadas tenían articulaciones giratorias como la de los snidget lo que les permitía cambiar la dirección tan rápido como el rayo y con la misma precisión que su animal viviente y además había sido hechizada para que permaneciera dentro del campo de juego. Se puede decir que así se terminó con el proceso que había comenzado 300 años antes, en el pantano de Queerditch. Por fin había nacido el juego del Quidditch tal como lo conocemos en la actualidad</p>
 
-                <h4>Campo de juego.</h4>
+ </section>
+ <h2>Si te interesa saber mas sobre la historia del quidditch en este enlace podes descargarte el libro <i>Quidditch a Traves de los Tiempos escrito por Kennilworthy Whisp</i></h2>
+  
+  <a href="./Quidditch_a_Traves_de_los_Tiempos.pdf" download>Descargar PDF</a>
+
+<section> <!-- reglamento -->
+  <h2>Reglamento del Quidditch</h2>
+    <h3>Campo de juego y equipamiento</h3>
+     <h4>Campo de juego.</h4>
+        <p>Se juega en un estadio con forma elíptica (150 metros de semieje mayor y 55 de semieje menor), cada uno de los lados está dotado de tres aros ubicados a un distinto nivel de altura. Para el juego se utilizan tres tipos de bolas distintas: una Quaffle, dos Bludger y una snitch dorada. La bola más importante durante el encuentro es la snitch dorada (una pelota dorada del tamaño de una nuez grande e increíblemente veloz) ya que el jugador del equipo que logre atraparla gana 150 puntos y el juego termina automáticamente. La quaffle es la que se utiliza para marcar haciéndola pasar a través de los aros del equipo contrario, al pasarlos por el aro ganan 10 puntos; con ella juegan los cazadores. Las bludgers son bolas que atacan a los jugadores, son grandes, pesadas y vuelan con fuerza; las reciben los golpeadores, que utilizan bates pequeños para evitar que golpeen a alguno de su equipo y contrariamente enviarlas al equipo contrario para que golpeen a ellos.</p>    
+        <p>El juego enfrenta a dos equipos de siete jugadores cada uno, distribuidos de acuerdo con su objetivo: un guardián, dos golpeadores, tres cazadores y un buscador. El guardián es el guardameta que se encarga de evitar que el equipo contrario introduzca la quaffle en los aros de su respectivo equipo. Los golpeadores son los encargados de repeler las bludgers,1​ para proteger a su equipo de ellas. Los cazadores son los encargados de procurar introducir la quaffle a través de los aros contrarios.</p>
+        <p>Por último, el buscador es el encargado de estar atento durante todo el juego para poder atrapar la snitch antes que el equipo contrario. Al atrapar la "snitch" el juego finaliza; se tiene conocimiento de juegos que se han prolongado durante meses antes de poder atrapar la snitch e incluso algunos que se han declarado en empate debido a que los jugadores no pueden continuar. El equipo que la atrapa suma 150 puntos. Aunque un equipo haya atrapado la snitch, gana el que haya acumulado más puntos por lo que no siempre gana el equipo que haya atrapado la snitch.</p>
                 
-                <p>Se juega en un estadio con forma elíptica (150 metros de semieje mayor y 55 de semieje menor), cada uno de los lados está dotado de tres aros ubicados a un distinto nivel de altura. Para el juego se utilizan tres tipos de bolas distintas: una Quaffle, dos Bludger y una snitch dorada. La bola más importante durante el encuentro es la snitch dorada (una pelota dorada del tamaño de una nuez grande e increíblemente veloz) ya que el jugador del equipo que logre atraparla gana 150 puntos y el juego termina automáticamente. La quaffle es la que se utiliza para marcar haciéndola pasar a través de los aros del equipo contrario, al pasarlos por el aro ganan 10 puntos; con ella juegan los cazadores. Las bludgers son bolas que atacan a los jugadores, son grandes, pesadas y vuelan con fuerza; las reciben los golpeadores, que utilizan bates pequeños para evitar que golpeen a alguno de su equipo y contrariamente enviarlas al equipo contrario para que golpeen a ellos.</p>
+     <h4>Mecanismo del juego</h4>
+        <p>La duración de un encuentro de Quidditch es impredecible e indefinida. El juego termina cuando la snitch dorada ha sido atrapada por el buscador. Mientras tanto, el juego sigue. El récord de duración de un partido de Quidditch es de tres meses, en el cual debían cambiar los jugadores constantemente.</p>
+        <p>Las puntuaciones son de diez puntos por cada gol marcado, y 150 puntos por atrapar la snitch dorada. Ha habido encuentros en que siendo la diferencia de los contrincantes mayor de ciento cincuenta puntos, la estrategia se ha convertido en despistar a los que van ganando para que no encuentren la snitch dorada.</p>
+        <p>Existen ligas profesionales de este deporte, y mundiales que se celebran cada cuatro años entre las distintas naciones de magos (similar a la Copa Mundial de Fútbol). Durante la trama de Harry Potter y el cáliz de fuego (2005), se da la final de la Copa Mundial de Quidditch, en la que Irlanda se alzó con la victoria frente a Bulgaria, pese a que el buscador del equipo búlgaro, Viktor Krum atrapó la snitch. A los partidos hay que asistir en vivo, pues no se retransmiten por ninguna televisión -los magos no usan artefactos muggles-. Pero sí se pueden escuchar en directo desde la radio, o leer los resultados en una gaceta deportiva de magos.</p>
+        <p>Como norma, encima de las escobas y una vez empezado el partido, no se puede hechizar a ningún jugador, ni usar ningún objeto mágico como la varita (en realidad sí se puede pero no se la puede usar con las pelotas ni con los jugadores contrarios o el público), así como también está prohibido el uso de cualquier poción mágica como el "Félix Felicis" también conocida como "Suerte Líquida", la cual está estrictamente prohibida para cualquier evento deportivo y se considera como dopaje para el Quidditch.</p>
                 
-                <p>El juego enfrenta a dos equipos de siete jugadores cada uno, distribuidos de acuerdo con su objetivo: un guardián, dos golpeadores, tres cazadores y un buscador. El guardián es el guardameta que se encarga de evitar que el equipo contrario introduzca la quaffle en los aros de su respectivo equipo. Los golpeadores son los encargados de repeler las bludgers,1​ para proteger a su equipo de ellas. Los cazadores son los encargados de procurar introducir la quaffle a través de los aros contrarios.</p>
+     <h4>Jugadores</h4>
+        <p>Hay cuatro tipos de jugadores: cazador, buscador, golpeador y guardián.</p>
+        <p>Cada uno tiene una función. El cazador intenta marcar con la quaffle, el golpeador intenta evitar que las bludgers derriben a sus jugadores e intentar derribar a los contrincantes, el buscador intenta coger la snitch y el guardián intenta que no le marquen puntos.</p>
                 
-                <p>Por último, el buscador es el encargado de estar atento durante todo el juego para poder atrapar la snitch antes que el equipo contrario. Al atrapar la "snitch" el juego finaliza; se tiene conocimiento de juegos que se han prolongado durante meses antes de poder atrapar la snitch e incluso algunos que se han declarado en empate debido a que los jugadores no pueden continuar. El equipo que la atrapa suma 150 puntos. Aunque un equipo haya atrapado la snitch, gana el que haya acumulado más puntos por lo que no siempre gana el equipo que haya atrapado la snitch.</p>
+     <h4>Reglas</h4>
+        <p>Los jugadores no pueden salirse de las líneas que limitan el campo de juego, aunque pueden volar tan alto como deseen. La Quaffle se entrega al equipo contrario si algún jugador se sale de los límites.
+        <p>El árbitro puede otorgar penaltis si se comete una falta. Un solo Cazador del equipo agredido vuela desde el círculo central hacia el área de anotación para intentar anotar. El Guardián del equipo contrario puede intentar bloquear el disparo, pero ningún otro jugador debe interferir.</p>
+        <p>Se permite el contacto, pero los jugadores no pueden sujetar la escoba de otro ni tampoco ninguna parte de su cuerpo.
+        <p>No se permiten sustituciones de jugadores, aún si alguno está muy lastimado para continuar (se hacen excepciones si el juego se prolonga por demasiado tiempo, y los jugadores están demasiado fatigados).</p>
+        <p>Un partido de Quidditch solo puede concluir al atrapar la snitch dorada o si los capitanes de ambos equipos concuerdan darlo por terminado.</p>
                 
-                <h4>Mecanismo del juego</h4>
-                <p>La duración de un encuentro de Quidditch es impredecible e indefinida. El juego termina cuando la snitch dorada ha sido atrapada por el buscador. Mientras tanto, el juego sigue. El récord de duración de un partido de Quidditch es de tres meses, en el cual debían cambiar los jugadores constantemente.</p>
+     <h4>Faltas</h4>
+        <p>Rowling ha escrito que hay 700 faltas en el Quidditch listadas por el Departamento de Deportes y Juegos Mágicos, pero la mayoría de ellas no están abiertas al público ya que el Departamento teme que los magos que lean la lista de faltas "podrían tener malas ideas". Se dice que todas las faltas ocurrieron durante el primer Mundial de Quidditch. Aparentemente, la mayoría ahora son imposibles de cometer por la regla impuesta respecto al uso de las varitas contra los oponentes (impuesta en 1538). Las faltas más comunes están relacionadas aquí:</p>
                 
-                <p>Las puntuaciones son de diez puntos por cada gol marcado, y 150 puntos por atrapar la snitch dorada. Ha habido encuentros en que siendo la diferencia de los contrincantes mayor de ciento cincuenta puntos, la estrategia se ha convertido en despistar a los que van ganando para que no encuentren la snitch dorada.</p>
+            <p><i>Blagging</i></p>
+            <p>Aplicado a: todos los jugadores.
+            <p>Descripción: los jugadores no pueden agarrar el cepillo de la escoba de un oponente para aminorar su vuelo (Draco Malfoy comete esta falta en Harry Potter y el prisionero de Azkaban, evitando que Harry atrape la Snitch).</p>
                 
-                <p>Existen ligas profesionales de este deporte, y mundiales que se celebran cada cuatro años entre las distintas naciones de magos (similar a la Copa Mundial de Fútbol). Durante la trama de Harry Potter y el cáliz de fuego (2005), se da la final de la Copa Mundial de Quidditch, en la que Irlanda se alzó con la victoria frente a Bulgaria, pese a que el buscador del equipo búlgaro, Viktor Krum atrapó la snitch. A los partidos hay que asistir en vivo, pues no se retransmiten por ninguna televisión -los magos no usan artefactos muggles-. Pero sí se pueden escuchar en directo desde la radio, o leer los resultados en una gaceta deportiva de magos.</p>
+            <p><i>Blatching</i></p>
+            <p>Aplicado a: todos los jugadores.</p>
+            <p>Descripción: los jugadores no pueden volar con la intención de estrellarse contra otro (el buscador sustituto de Slytherin, Harper, rompe esta regla al chocarse contra Harry después de insultar a Ronald Weasley. Esto ocurre en el sexto libro, Harry Potter y el misterio del príncipe).</p>
                 
-                <p>Como norma, encima de las escobas y una vez empezado el partido, no se puede hechizar a ningún jugador, ni usar ningún objeto mágico como la varita (en realidad sí se puede pero no se la puede usar con las pelotas ni con los jugadores contrarios o el público), así como también está prohibido el uso de cualquier poción mágica como el "Félix Felicis" también conocida como "Suerte Líquida", la cual está estrictamente prohibida para cualquier evento deportivo y se considera como dopaje para el Quidditch.</p>
+            <p><i>Blurting</i></p>
+            <p>Aplicado a: todos los jugadores.</p>
+            <p>Descripción: los jugadores no pueden sujetar el mango de las escobas para sacar de curso a un oponente.</p>
                 
-                <h4>Jugadores</h4>
-                <p>Hay cuatro tipos de jugadores: cazador, buscador, golpeador y guardián.</p>
+            <p><i>Bumphing</i></p>
+            <p>Aplicado a: Golpeadores.</p>
+            <p>Descripción: los Golpeadores no pueden enviar las Bludgers hacia los espectadores (aunque Harry a modo de broma le ordena a uno de sus Golpeadores enviarle una a Zacharias Smith por sus comentarios en Harry Potter y el misterio del príncipe), ni al Guardián, a menos que la Quaffle esté dentro del área de anotación (en la primera película, sin embargo, Marcus Flint, un Cazador, comete esta falta con un Bate de Golpeador, y Madam Hooch lo penaliza por ello).</p>
                 
-                <p>Cada uno tiene una función. El cazador intenta marcar con la quaffle, el golpeador intenta evitar que las bludgers derriben a sus jugadores e intentar derribar a los contrincantes, el buscador intenta coger la snitch y el guardián intenta que no le marquen puntos.</p>
+            <p><i>Cobbing</i></p>
+            <p>Aplicado a: todos los jugadores.</p>
+            <p>Descripción: los jugadores no pueden hacer uso excesivo de sus codos contra los oponentes (Marcus Flint, Cazador de Slytherin, comete esta falta contra la Cazadora de Gryffindor, Angelina Johnson, en Harry Potter y la cámara secreta).</p>
                 
-                <h4>Reglas</h4>
-                <p>Los jugadores no pueden salirse de las líneas que limitan el campo de juego, aunque pueden volar tan alto como deseen. La Quaffle se entrega al equipo contrario si algún jugador se sale de los límites.
-                <p>El árbitro puede otorgar penaltis si se comete una falta. Un solo Cazador del equipo agredido vuela desde el círculo central hacia el área de anotación para intentar anotar. El Guardián del equipo contrario puede intentar bloquear el disparo, pero ningún otro jugador debe interferir.</p>
-                <p>Se permite el contacto, pero los jugadores no pueden sujetar la escoba de otro ni tampoco ninguna parte de su cuerpo.
-                <p>No se permiten sustituciones de jugadores, aún si alguno está muy lastimado para continuar (se hacen excepciones si el juego se prolonga por demasiado tiempo, y los jugadores están demasiado fatigados).</p>
-                <p>Un partido de Quidditch solo puede concluir al atrapar la snitch dorada o si los capitanes de ambos equipos concuerdan darlo por terminado.</p>
-                <h4>Faltas</h4>
-                <p>Rowling ha escrito que hay 700 faltas en el Quidditch listadas por el Departamento de Deportes y Juegos Mágicos, pero la mayoría de ellas no están abiertas al público ya que el Departamento teme que los magos que lean la lista de faltas "podrían tener malas ideas". Se dice que todas las faltas ocurrieron durante el primer Mundial de Quidditch. Aparentemente, la mayoría ahora son imposibles de cometer por la regla impuesta respecto al uso de las varitas contra los oponentes (impuesta en 1538). Las faltas más comunes están relacionadas aquí:</p>
+            <p><i>Flacking</i></p>
+            <p>Aplicado a: Guardianes.</p>
+            <p>Descripción: no pueden defender los postes de gol desde atrás empujando las Quaffles fuera de los aros: deben defenderlos desde el frente.</p>
                 
-                <p><i>Blagging</i></p>
-                <p>Aplicado a: todos los jugadores.
+            <p><i>Haversacking</i></p>
+            <p>Cazadores.</p> 
+            <p>Descripción: no deben hacer contacto con la Quaffle mientras pase a través de un aro (la Quaffle tiene que ser arrojada a través del aro).</p>
                 
-                <p>Descripción: los jugadores no pueden agarrar el cepillo de la escoba de un oponente para aminorar su vuelo (Draco Malfoy comete esta falta en Harry Potter y el prisionero de Azkaban, evitando que Harry atrape la Snitch).</p>
+            <p><i>Quaffle-pocking</i></p>
+            <p>Aplicado a: Cazadores.</p>
+            <p>Descripción: no deben sabotear la Quaffle de ninguna manera (por ejemplo, pincharla para que caiga más rápido o vaya en zigzag).</p>
                 
-                <p><i>Blatching</i></p>
-                <p>Aplicado a: todos los jugadores.</p>
+            <p><i>Snitchnip</i></p>
+            <p>Aplicado a: todos, excepto los Buscadores.</p>
+            <p>Descripción: tocar o atrapar la Snitch Dorada.</p>
                 
-                <p>Descripción: los jugadores no pueden volar con la intención de estrellarse contra otro (el buscador sustituto de Slytherin, Harper, rompe esta regla al chocarse contra Harry después de insultar a Ronald Weasley. Esto ocurre en el sexto libro, Harry Potter y el misterio del príncipe).</p>
-                
-                <p><i>Blurting</i></p>
-                <p>Aplicado a: todos los jugadores.</p>
-                
-                <p>Descripción: los jugadores no pueden sujetar el mango de las escobas para sacar de curso a un oponente.</p>
-                
-                <p><i>Bumphing</i></p>
-                <p>Aplicado a: Golpeadores.</p>
-                
-                <p>Descripción: los Golpeadores no pueden enviar las Bludgers hacia los espectadores (aunque Harry a modo de broma le ordena a uno de sus Golpeadores enviarle una a Zacharias Smith por sus comentarios en Harry Potter y el misterio del príncipe), ni al Guardián, a menos que la Quaffle esté dentro del área de anotación (en la primera película, sin embargo, Marcus Flint, un Cazador, comete esta falta con un Bate de Golpeador, y Madam Hooch lo penaliza por ello).</p>
-                
-                <p><i>Cobbing</i></p>
-                <p>Aplicado a: todos los jugadores.</p>
-                
-                <p>Descripción: los jugadores no pueden hacer uso excesivo de sus codos contra los oponentes (Marcus Flint, Cazador de Slytherin, comete esta falta contra la Cazadora de Gryffindor, Angelina Johnson, en Harry Potter y la cámara secreta).</p>
-                
-                <p><i>Flacking</i></p>
-                <p>Aplicado a: Guardianes.</p>
-                
-                <p>Descripción: no pueden defender los postes de gol desde atrás empujando las Quaffles fuera de los aros: deben defenderlos desde el frente.</p>
-                
-                <p><i>Haversacking</i></p>
-                <p>Cazadores.</p> 
-                
-                <p>Descripción: no deben hacer contacto con la Quaffle mientras pase a través de un aro (la Quaffle tiene que ser arrojada a través del aro).</p>
-                
-                <p><i>Quaffle-pocking</i></p>
-                <p>Aplicado a: Cazadores.</p>
-                
-                <p>Descripción: no deben sabotear la Quaffle de ninguna manera (por ejemplo, pincharla para que caiga más rápido o vaya en zigzag).</p>
-                
-                <p><i>Snitchnip</i></p>
-                <p>Aplicado a: todos, excepto los Buscadores.</p>
-                
-                <p>Descripción: tocar o atrapar la Snitch Dorada.</p>
-                
-                <p><i>Stooging</i></p>
-                <p>Aplicado a: Cazadores.</p>
-                
-                <p>Descripción: no se permite más de un solo Cazador dentro del área de anotación.</p>
+            <p><i>Stooging</i></p>
+            <p>Aplicado a: Cazadores.</p>
+            <p>Descripción: no se permite más de un solo Cazador dentro del área de anotación.</p>
         </section>
 
         <section> <!-- Nuestro Equipo -->
             <h2>¡Conoce a nuestro equipo!</h2>
+            <div class="carousel">
+                <div class="carousel-content">
+                  <div class="carousel-item">
+                    <img class="carousel-img" src="./equipo1.jpg" alt="Primera Imagen">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="carousel-img" src="./equipo2.jpeg" alt="Segunda Imagen">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="carousel-img" src="./claves.jpg" alt="Tercera Imagen">
+                  </div>
+                </div>
+              </div>
+             
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus cumque enim a, expedita nihil reprehenderit nostrum repudiandae consequatur explicabo sit tempore ad sed cum facere quis distinctio nulla modi omnis?</p>
         <!-- CARROUSEL DE FOTOS -->
         </section>
@@ -180,11 +201,11 @@
             </ul>
         </form>
     </div>
-    
+     
     
     <footer> <!-- fotos + datos desarrolladores -->
        <div><img src="./jugadora-de-quidditch-de-ravenclaw--852904927.png" alt="Vitto" class="desVitto">
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore dignissimos repellat ab libero doloribus illum. Blanditiis ab debitis quia quae perferendis iure quidem qui maxime, est eius, fugiat ut hic.</p>
+    <p>Hola! Mi nombre es Vittoria y, cuando asisti a Hogwarts, mi casa fue Ravenclaw. En el mundo muggle no podemos volar, pero nos la arreglamos para jugar al quidditch. Tambien, en este mundo sin magia hago un poquito creando paginas webs, Espero les guste esta!</p>
 </div> 
         <div><img src="./quidditch-player-of-slytherin--139058171.png" alt="Lucho" class="desLucho">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem odio error, voluptatum nesciunt illum id nihil consequatur fugit esse, maiores veniam quam? Id, repellendus? Voluptates consequuntur pariatur esse rerum reiciendis?</p>

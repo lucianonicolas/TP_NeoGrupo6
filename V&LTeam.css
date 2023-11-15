@@ -47,16 +47,16 @@ body {
     font-size: 18px;
     list-style-type:none ;
     display: flex;
-    justify-content: center;
-    padding: 10px; 
-    color:black ;
-    
+    flex-direction:column;
+    padding: 10px;
+    position: fixed;
+    width: 250px;
 }
 li{
    
     padding: 5px;
     margin: 10px;
-    justify-content: center;
+    justify-content: right;
     background-color: azure;
     border-radius: 25px ;
 }

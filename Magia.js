@@ -11,30 +11,41 @@ function openModal() {
     const email = document.getElementById('email').value;
   
     if (name && email) {
-      // Aquí podrías enviar estos datos a tu servidor o realizar alguna acción con ellos
       console.log('Nombre:', name);
       console.log('Email:', email);
-      // Simplemente cerrando el modal para este ejemplo
       closeModal();
     } else {
       alert('Por favor, completa todos los campos.');
     }
   }
+ 
 
-  function moveCarousel() {
-    carouselContent.style.transform = `translateX(-${slide * 100}%)`;
-  }
+let slide = 0;
+const totalItems = 3; 
 
-  function nextSlide() {
+function nextSlide() {
     slide = (slide + 1) % totalItems;
     moveCarousel();
-  }
+}
+
+function previousSlide() {
+    slide = (slide - 1 + totalItems) % totalItems;
+    moveCarousel();
+}
+
+function moveCarousel() {
+    const carouselContent = document.getElementById('carouselContent');
+    carouselContent.style.transform = `translateX(-${slide * 100}%)`;
+}
+
+setInterval(nextSlide, 6000); 
+
 
   function previousSlide() {
     slide = (slide - 1 + totalItems) % totalItems;
     moveCarousel();
   }
 
-  setInterval(nextSlide, 3000);
+  setInterval(nextSlide, 5000);
 
         

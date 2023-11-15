@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
-    <script src= "./Magia.js"></script>
+    <script defer src= "./Magia.js"></script>
 </head>
 <body>
     <div class="Encabezado"><header> <!-- logo + nombre-->
@@ -79,13 +79,14 @@
  </section>
  <h2>Si te interesa saber mas sobre la historia del quidditch en este enlace podes descargarte el libro <i>Quidditch a Traves de los Tiempos escrito por Kennilworthy Whisp</i></h2>
   
-  <a href="./Quidditch_a_Traves_de_los_Tiempos.pdf" download>Descargar PDF</a>
+ <button class="pdf"> <a href="./Quidditch_a_Traves_de_los_Tiempos.pdf" download>Descargar PDF</a></button>
 
 <section id="reglamento"> <!-- reglamento -->
   <h2>Reglamento del Quidditch</h2>
     <h3>Campo de juego y equipamiento</h3>
      <h4>Campo de juego.</h4>
         <p>Se juega en un estadio con forma elíptica (150 metros de semieje mayor y 55 de semieje menor), cada uno de los lados está dotado de tres aros ubicados a un distinto nivel de altura. Para el juego se utilizan tres tipos de bolas distintas: una Quaffle, dos Bludger y una snitch dorada. La bola más importante durante el encuentro es la snitch dorada (una pelota dorada del tamaño de una nuez grande e increíblemente veloz) ya que el jugador del equipo que logre atraparla gana 150 puntos y el juego termina automáticamente. La quaffle es la que se utiliza para marcar haciéndola pasar a través de los aros del equipo contrario, al pasarlos por el aro ganan 10 puntos; con ella juegan los cazadores. Las bludgers son bolas que atacan a los jugadores, son grandes, pesadas y vuelan con fuerza; las reciben los golpeadores, que utilizan bates pequeños para evitar que golpeen a alguno de su equipo y contrariamente enviarlas al equipo contrario para que golpeen a ellos.</p>    
+        <img src="./campo de quidditch.jpg">
         <p>El juego enfrenta a dos equipos de siete jugadores cada uno, distribuidos de acuerdo con su objetivo: un guardián, dos golpeadores, tres cazadores y un buscador. El guardián es el guardameta que se encarga de evitar que el equipo contrario introduzca la quaffle en los aros de su respectivo equipo. Los golpeadores son los encargados de repeler las bludgers,1​ para proteger a su equipo de ellas. Los cazadores son los encargados de procurar introducir la quaffle a través de los aros contrarios.</p>
         <p>Por último, el buscador es el encargado de estar atento durante todo el juego para poder atrapar la snitch antes que el equipo contrario. Al atrapar la "snitch" el juego finaliza; se tiene conocimiento de juegos que se han prolongado durante meses antes de poder atrapar la snitch e incluso algunos que se han declarado en empate debido a que los jugadores no pueden continuar. El equipo que la atrapa suma 150 puntos. Aunque un equipo haya atrapado la snitch, gana el que haya acumulado más puntos por lo que no siempre gana el equipo que haya atrapado la snitch.</p>
                 
@@ -98,8 +99,12 @@
      <h4>Jugadores</h4>
         <p>Hay cuatro tipos de jugadores: cazador, buscador, golpeador y guardián.</p>
         <p>Cada uno tiene una función. El cazador intenta marcar con la quaffle, el golpeador intenta evitar que las bludgers derriben a sus jugadores e intentar derribar a los contrincantes, el buscador intenta coger la snitch y el guardián intenta que no le marquen puntos.</p>
-                
-     <h4>Reglas</h4>
+         <div class=jugadores>
+          <img src="./buscadores.gif">
+          <img src="./cazadores.gif">
+          <img src="./arbitro.gif">
+         </div>
+          <h4>Reglas</h4>
         <p>Los jugadores no pueden salirse de las líneas que limitan el campo de juego, aunque pueden volar tan alto como deseen. La Quaffle se entrega al equipo contrario si algún jugador se sale de los límites.
         <p>El árbitro puede otorgar penaltis si se comete una falta. Un solo Cazador del equipo agredido vuela desde el círculo central hacia el área de anotación para intentar anotar. El Guardián del equipo contrario puede intentar bloquear el disparo, pero ningún otro jugador debe interferir.</p>
         <p>Se permite el contacto, pero los jugadores no pueden sujetar la escoba de otro ni tampoco ninguna parte de su cuerpo.
@@ -149,26 +154,22 @@
             <p>Aplicado a: Cazadores.</p>
             <p>Descripción: no se permite más de un solo Cazador dentro del área de anotación.</p>
         </section>
-
-        <section id="ideas"> <!-- Nuestro Equipo -->
-            <h2>Equipamiento e ideas</h2>
-            <div class="carousel">
-                <div class="carousel-content">
+        <section id="ideas">
+          <h2>Equipamiento e ideas</h2>
+          <div class="carousel" id="carousel">
+              <div class="carousel-content" id="carouselContent">
                   <div class="carousel-item">
-                    <img class="carousel-img" src="./palos.jpg" alt="Primera Imagen">
+                      <img class="carousel-img" src="./palos.jpg" alt="Primera Imagen">
                   </div>
                   <div class="carousel-item">
-                    <img class="carousel-img" src="./equipamiento.jpg" alt="Segunda Imagen">
+                      <img class="carousel-img" src="./equipamiento.jpg" alt="Segunda Imagen">
                   </div>
                   <div class="carousel-item">
-                    <img class="carousel-img" src="./claves.jpg" alt="Tercera Imagen">
+                      <img class="carousel-img" src="./claves.jpg" alt="Tercera Imagen">
                   </div>
-                </div>
               </div>
-             
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus cumque enim a, expedita nihil reprehenderit nostrum repudiandae consequatur explicabo sit tempore ad sed cum facere quis distinctio nulla modi omnis?</p>
-        <!-- CARROUSEL DE FOTOS -->
-        </section>
+          </div>
+      </section>      
 
     </main>
 
@@ -214,5 +215,6 @@
     </div>
     
     </footer>
+    <script src= "./Magia.js"></script>
 </body>
 </html>

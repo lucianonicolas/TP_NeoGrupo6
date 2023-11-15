@@ -42,6 +42,7 @@ body {
 }
 
 .inicio{
+    text-decoration: none !important;
     font-family: "IM Fell English", serif;
     font-size: 18px;
     list-style-type:none ;
@@ -49,6 +50,7 @@ body {
     justify-content: center;
     padding: 10px; 
     color:black ;
+    
 }
 li{
    
@@ -174,4 +176,17 @@ footer {
   max-height: 100%; 
   border: 2px solid #333;
   border-radius: 10px;
+}
+
+.jugadores {
+  display: flex;
+  max-width: 100%;
+  max-height: 100%;
+  align-items: center;
+  flex-direction:column;
+
+}
+.pdf{
+  font-family: 'IM Fell English', serif;
+  color:#000
 }
